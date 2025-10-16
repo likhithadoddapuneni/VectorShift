@@ -8,14 +8,14 @@ import asyncio
 from integrations.integration_item import IntegrationItem
 from redis_client import add_key_value_redis, get_value_redis, delete_key_redis
 
-CLIENT_ID = 'a5c8eefc-ffce-4a3d-bbbb-732001cfc39e'  # Replace with your actual HubSpot Client ID
-CLIENT_SECRET = '9bc68856-2e2b-463d-bba7-577751674d01'  # Replace with your actual HubSpot Client Secret
+CLIENT_ID = 'keep your client id'  # Replace with your actual HubSpot Client ID
+CLIENT_SECRET = 'Keep you secret key'  # Replace with your actual HubSpot Client Secret
 REDIRECT_URI = 'http://localhost:8000/integrations/hubspot/oauth2callback'
 
 # Define scopes for HubSpot API access
 SCOPES = 'crm.objects.contacts.read crm.objects.companies.read crm.objects.deals.read'
 
-authorization_url = f'https://app-na2.hubspot.com/oauth/authorize?client_id=a5c8eefc-ffce-4a3d-bbbb-732001cfc39e&redirect_uri=http://localhost:8000/integrations/hubspot/oauth2callback&scope=oauth%20crm.objects.companies.read%20crm.objects.deals.read%20crm.objects.contacts.read'
+authorization_url = f'keep your auth url here'
 
 async def authorize_hubspot(user_id, org_id):
     """
